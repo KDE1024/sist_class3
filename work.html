@@ -2,38 +2,113 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>0415)숙제</title>
+<title>회원가입</title>
 </head>
 <body>
-<p>
-(서울=<strike>연합뉴스</strike>) 김아람 기자 = <mark>카카오</mark>[035720]가 액면분할 후 첫 거래일인 <b>15일 큰 폭</b>>으로 올랐다.
-</p>
-<p>
-이날 유가증권시장에서 <mark>카카오</mark>는 전 거래일보다 7.59% 오른 12만500원에 거래를 마쳤다.
-</p>
-<p>
-장 초반 한때 <b>18% 오른 13만2천500</b>원까지 상승하기도 했다.
-</p>
-<p>
-개인이 4천348억원어치를 순매수했다. 이날 <mark>카카오</mark>의 개인 순매수 금액은 유가증권시장과 코스닥을 통틀어 1위였다.
-</p>
-<p>
-반면 기관과 외국인은 각각 2천774억원, 1천441억원을 순매도했다.
-</p>
-<p>
-종가 기준 시가총액은 <strike>53조4천790</strike>억원으로 코스피 종목 중 5위에 올랐다.
-</p>
-<p>
-<mark>카카오</mark>는 주식 액면가를 <b>500원에서 100원</b>으로 쪼개는 분할(1주→5주)을 마치고 사흘간 거래정지를 거쳐 이날 거래를 재개했다.
-</p>
-<p>
-액면분할을 앞두고 <mark>카카오</mark>는 <b>가상화폐 거래소 업비트</b> 운영사인 두나무 지분가치 등이 부각되며 신고가 행진을 이어왔다.
-</p>
-<p>
-<mark>카카오</mark>는 본사와 케이큐브1호 벤쳐투자조합, 카카오청년창업펀드 등 연결법인을 통해 합산으로 두나무 지분 총 21.3%를 보유 중이다.
-</p>
-<p>
-이날 증권가에서는 <mark>카카오</mark> 목표주가를 줄줄이 상향 조정했다. 목표주가를 올린 증권사는 이베스트투자증권(<sup>13만2천원→15만2천원</sup>), NH투자증권(12만원→14만원), 신한금융투자(11만7천원→13만5천원), KTB투자증권(<sup>11만원→13만원</sup>) 등이다.
-</p>
+<h1>회원가입</h1>
+<table border="1" bordercolor="#FFFFFF">
+<tr>
+	<td><font color="#FF0000">* </font>아이디</td> 
+	<td><input type="text" name="id" size="10" autofocus>
+	
+	<input type="button" value="중복확인"/>
+	</td>
+</tr>
+<tr>
+	<td><font color="#FF0000">* </font>비밀번호</td>
+	<td><input type="password" name="pass" size="10"></td>
+</tr>
+<tr>
+	<td><font color="#FF0000">* </font>비밀번호 확인</td>
+	<td><input type="password" name="pass" size="10"></td>
+</tr>
+<tr>
+	<td><font color="#FF0000">* </font>이름</td>
+	<td><input type="text" name="name" size="10"></td>
+</tr>
+<tr>
+	<td><font color="#FF0000">* </font>주민등록 번호</td>
+	<td><input type="text" name="name" size="10">-
+	<input type="password" name="pass" size="10">
+	</td>
+</tr>
+<tr>
+	<td><font color="#FF0000">* </font>성별</td>
+	<td><input type="radio" name="gender" value="M">남자
+	<input type="radio" name="gender" value="F">여자</td>
+</tr>
+<tr>
+	<td><font color="#FF0000">* </font>생년월일</td>
+	<td><input type="date"></td>
+</tr>
+<tr>
+	<td><font color="#FF0000">* </font>우편번호</td>
+	<td>
+	<input type="text"> 
+	<input type="button" value="우편번호찾기">
+	</td>
+</tr>
+<tr>
+	<td><font color="#FF0000">* </font>주소</td>
+	<td><input type="text"></td>
+</tr>
+<tr>
+	<td><font color="#FF0000">* </font>상세주소</td>
+	<td><input type="text"></td>
+</tr>
+<tr>
+	<td>이메일</td>
+	<td>
+	<input type="text"/>@
+	<select name="domain" size="1">
+		<option value="none">직접입력</option>
+		<option value="daum.net">daum.net</option>
+		<option value="sist.co.kr">sist.co.kr</option>
+		<option value="google.com">google.com</option>
+		<option value="naver.com">naver.com</option>
+	</select>
+	<input type="text">
+	</td>
+</tr>
+<tr>
+	<td>관심언어</td>
+	<td>
+	<input type="checkbox" name="c" value="자바">자바
+	<input type="checkbox" name="c" value="HTML">HTML
+	<input type="checkbox" name="c" value="Visual Basic">Visual Basic
+	</td>
+</tr>
+<tr>
+	<td> </td>
+	<td>
+	<input type="checkbox" name="c" value="C/C++">C/C++
+	<input type="checkbox" name="c" value="Python">Python
+	<input type="checkbox" name="c" value="ASP">ASP
+	</td>
+</tr>
+<tr>
+	<td>가입인사</td>
+	<td><textarea name="ta" rows="10" cols="60"></textarea> </td>
+</tr>
+<tr>
+	<td> </td>
+	<td align="center">
+	<input type="button" value=" 가입 ">
+	<input type="button" value="초기화">
+	</td>
+</tr>
+<tr>
+	<td colspan="2" align="center"><font color="#FF0000">
+	* 표는 필수입력입니다.
+	</font></td>
+</tr>
+
+
+
+
+
+
+</table>
+
 </body>
 </html>

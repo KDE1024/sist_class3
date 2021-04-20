@@ -2,55 +2,44 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>복잡한 모양의 테이블 생성</title>
+<title>테이블 사용</title>
 </head>
 <body>
-
-<strong>칸 합치기</strong><br/>
-<table border="1" width="300" height="300"> 
-<tr>
-	<td colspan="2">1</td><!-- td>2</td> --><td>3</td>
-</tr>
-<tr>
-	<td>4</td><td colspan="2">5</td><!-- <td>6</td> -->
-</tr>
-<tr>
-	<td colspan="3">7</td><!-- <td>8</td><td>9</td> -->
-</tr>
-
-<hr/>
-
-<strong>행 합치기</strong><br/>
-<table border="1" width="300" height="300"> 
-<tr>
-	<td rowspan="2">1</td><td>2</td><td rowspan="3">3</td>
-</tr>
-<tr>
-	<!-- <td>4</td> --><td rowspan="2">5</td><!-- <td>6</td> -->
-</tr>
-<tr>
-	<td>7</td><!-- <td>8</td> --><!-- <td>9</td> -->
-</tr>
+<!-- <thead>, <tbody>, <tfoot> : 의미적 태그
+<thead>가 감싸고 있는 부분은 테이블을 보여줄 떄 가장 위로 올라가고,
+<tfoot>이 감싸고 있는 부분은 테이블을 보여줄 때 가장 밑으로 내려간다.
+-->
+<table border="1" cellspacing="0" bordercolor="#333333">
+<thead>
+	<tr>
+		<th width="100">번호</th>
+		<th width="120">이름</th>
+		<th width="120">나이</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>1</td>
+		<td>강인섭</td>
+		<td>26</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>정은아</td>
+		<td>27</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>조혜원</td>
+		<td>26</td>
+	</tr>
+</tbody>
+<tfoot>
+	<tr>
+		<td colspan="2" align="center">계</td>
+		<td>79</td>
+	</tr>
+</tfoot>
 </table>
-
-<hr/>
-
-<strong>color</strong><br/>
-<table border="1" width="300" height="300"> 
-<tr>
-	<td colspan="2" bgcolor="#E6B3AF">1</td><!-- <td>2</td> --><td rowspan="2" bgcolor="#F6E8B9">3</td>
-</tr>
-<tr>
-	<td rowspan="2" bgcolor="#E1ECDD">4</td><td >5</td><!-- <td>6</td> -->
-</tr>
-<tr>
-	<!-- <td>7</td> --><td colspan="2" bgcolor="#D1E4E6">8</td><!-- <td>9</td> -->
-</tr>
-</table>
-
-
-
-
-
 </body>
 </html>
