@@ -2,113 +2,94 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원가입</title>
+<title>게시판</title>
+<style type="text/css">
+table{border-spacing: 0px;}
+table{border-top:2px solid #6290FF}
+
+
+</style>
 </head>
 <body>
-<h1>회원가입</h1>
+
 <table border="1" bordercolor="#FFFFFF">
-<tr>
-	<td><font color="#FF0000">* </font>아이디</td> 
-	<td><input type="text" name="id" size="10" autofocus>
-	
-	<input type="button" value="중복확인"/>
-	</td>
-</tr>
-<tr>
-	<td><font color="#FF0000">* </font>비밀번호</td>
-	<td><input type="password" name="pass" size="10"></td>
-</tr>
-<tr>
-	<td><font color="#FF0000">* </font>비밀번호 확인</td>
-	<td><input type="password" name="pass" size="10"></td>
-</tr>
-<tr>
-	<td><font color="#FF0000">* </font>이름</td>
-	<td><input type="text" name="name" size="10"></td>
-</tr>
-<tr>
-	<td><font color="#FF0000">* </font>주민등록 번호</td>
-	<td><input type="text" name="name" size="10">-
-	<input type="password" name="pass" size="10">
-	</td>
-</tr>
-<tr>
-	<td><font color="#FF0000">* </font>성별</td>
-	<td><input type="radio" name="gender" value="M">남자
-	<input type="radio" name="gender" value="F">여자</td>
-</tr>
-<tr>
-	<td><font color="#FF0000">* </font>생년월일</td>
-	<td><input type="date"></td>
-</tr>
-<tr>
-	<td><font color="#FF0000">* </font>우편번호</td>
-	<td>
-	<input type="text"> 
-	<input type="button" value="우편번호찾기">
-	</td>
-</tr>
-<tr>
-	<td><font color="#FF0000">* </font>주소</td>
-	<td><input type="text"></td>
-</tr>
-<tr>
-	<td><font color="#FF0000">* </font>상세주소</td>
-	<td><input type="text"></td>
-</tr>
-<tr>
-	<td>이메일</td>
-	<td>
-	<input type="text"/>@
-	<select name="domain" size="1">
-		<option value="none">직접입력</option>
-		<option value="daum.net">daum.net</option>
-		<option value="sist.co.kr">sist.co.kr</option>
-		<option value="google.com">google.com</option>
-		<option value="naver.com">naver.com</option>
-	</select>
-	<input type="text">
-	</td>
-</tr>
-<tr>
-	<td>관심언어</td>
-	<td>
-	<input type="checkbox" name="c" value="자바">자바
-	<input type="checkbox" name="c" value="HTML">HTML
-	<input type="checkbox" name="c" value="Visual Basic">Visual Basic
-	</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>
-	<input type="checkbox" name="c" value="C/C++">C/C++
-	<input type="checkbox" name="c" value="Python">Python
-	<input type="checkbox" name="c" value="ASP">ASP
-	</td>
-</tr>
-<tr>
-	<td>가입인사</td>
-	<td><textarea name="ta" rows="10" cols="60"></textarea> </td>
-</tr>
-<tr>
-	<td> </td>
-	<td align="center">
-	<input type="button" value=" 가입 ">
-	<input type="button" value="초기화">
-	</td>
-</tr>
-<tr>
-	<td colspan="2" align="center"><font color="#FF0000">
-	* 표는 필수입력입니다.
-	</font></td>
-</tr>
 
-
-
-
+<tr>
+	<th>번호</th>
+	<th width="450">제목</th>
+	<th>글쓴이</th>
+	<th>작성일</th>
+	<th>조회</th>
+	<th>추천</th>
+</tr>
+<tr>
+	<td>8</td>
+	<td>역삼동 맛집 추천 받습니다.</td>
+	<td>먹잘알</td>
+	<td>14:07</td>
+	<td>20</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>7</td>
+	<td>강남역 은희해장국 안가면 지상렬<font color="#A6A6A6">[2]</font></td>
+	<td>쌍용</td>
+	<td>13:32</td>
+	<td>30</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>6</td>
+	<td>디자이너들을 존경하게 되는 CSS 수업.......<font color="#A6A6A6" >[8]</font></td>
+	<td>아트</td>
+	<td>12:56</td>
+	<td>100</td>
+	<td>8</td>
+</tr>
+<tr>
+	<td>5</td>
+	<td>나이스 샤워 가보신 분 후기 알려주셈</td>
+	<td>배고팡</td>
+	<td>11:48</td>
+	<td>8</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>커피 맛집 알려주세용....바나프레소 질려요.....</td>
+	<td>최준..☆</td>
+	<td>10:45</td>
+	<td>60</td>
+	<td>8</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>벌써 수료 절반이 지났군요...시간 왜케 빠름<font color="#A6A6A6">[19]</font></td>
+	<td>ㅇㅅㅇ</td>
+	<td>10:08</td>
+	<td>20</td>
+	<td>80</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>오늘 최고 온도 28도.....더워......</td>
+	<td>반팔</td>
+	<td>09:38</td>
+	<td>20</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>여름 너무 더워 에어컨을 틀어~~~~~!!!</td>
+	<td>핫써머</td>
+	<td>09:05</td>
+	<td>50</td>
+	<td>10</td>
+</tr>
 
 
 </table>
+
 
 </body>
 </html>

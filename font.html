@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8"> 
-<title>속성이 있는 태그</title>
+<meta charset="UTF-8">
+<title>글꼴</title>
+<style type="text/css">
+body{font-family: 궁서체, 돋움, dotum, sans-serif}
+span{font-weight: bold;}
+.strike{text-decoration: line-through;}
+.u{text-decoration: underline;font-size: 20px; color: #899FD8}
+.o{text-decoration: overline;color:#EE7171}
+#ta{text-align: center;}
+</style>
 </head>
 <body>
 
-일반글자 : <font>안녕하세요?</font><br/>
-글꼴 : <font face="궁서체">안녕하세요?</font><br/>
-색 : <font color ="green">안녕하세요</font><br/>
-색 : <font color ="#00FF00">안녕하세요</font><br/>
-크기 : <font size ="1">안녕하세요</font><br/>
-크기 : <font size ="5">안녕하세요</font><br/>
-크기 : <font size ="10">안녕하세요</font><br/>
-<font size ="6" face="궁서체" color="sky blue">안녕하세요</font><br/>
+<div>
+오늘은 <span>수요일</span> 입니다. <br/>
+기상청은 오늘 오후 <span class="strike">비가.</span> 맑음으로 예상하였습니다.
+</div>
+<div>
+	<span class="u">밑줄</span><span class="o">윗줄</span>
+</div>
+<div id="ta">
+안녕하세요
+</div>
 
 
 </body>
