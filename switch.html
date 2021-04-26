@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>insert title here</title>
+<link rel = "stylesheet" type="text/css" href="http://211.63.89.147/html_prj/common/css/main.css"/>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+
+/* 조를 입력받아서 1조라면  
+ 1조	이하늘	이학민	진재혁	한상민	이상철
+ 2조	곽범수	박기범	조혜원	권예원	석지원 
+ 3조	조영래	유경우	현병호	김다은	이예림
+ 4조	강인섭	정은아	송준희	김덕영	
+ */
+var group=prompt("조를 입력해주세요.","1");
+var names="";
+//alert(typeof(group))//String
+ 
+ switch (group) {
+case "1": names="이하늘 이학민 진재혁 한상민 이상철"; break;
+case "2": names="곽범수 박기범 조혜원 권예원 석지원";break;
+case "3": names="조영래	 유경우 현병호 김다은 이예림";break;
+case "4": names="강인섭 정은아 송준희 김덕영";break;
+
+default: names="해당 조는 존재하지 않습니다.";
+}//end switch
+
+document.write(group+"조의 구성원 : "+names)
+ 
+ //혈액형을 입력받아 혈액형별 특징을 이미지로 출력하세요.
+  var bloodType=prompt("혈액형","A");
+ var output="";
+ switch( bloodType ){
+ case "A": output="images/blood_a.png"; break;
+ case "B": output="images/blood_b.png"; break;
+ case "AB": output="images/blood_ab.png"; break;
+ case "O": output="images/blood_o.png"; break;
+ default : output="../common/images/img1.png";
+ }//end switch
+ 
+ document.write("<div><img src='"+ output+"'/></div>");
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
