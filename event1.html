@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>insert title here</title>
+<link rel = "stylesheet" type="text/css" href="http://211.63.89.147/html_prj/common/css/main.css"/>
+<style type="text/css">
+
+	#wrap{width: 900px;height: 1000px; margin:0px auto; }
+	/* header 시작 */
+	#header{width: 900px;height: 160px; position:relative; 
+			background:url(http://211.63.89.147/html_prj/day0423/images/terrazzo2.jpg) #ffffff repeat-x; }
+	#headerTitle{width: 400px;height: 60px;position:absolute;top:40px; left:250px; 
+				font-weight: bold; font-family: 고딕, godic, sans-serif; font-size: 50px;}
+	/* header 끝 */
+	/* container 시작 */
+	#container{width: 900px; height: 700px;}
+	/* container 끝 */
+	/* footer 시작 */
+	#foofter{width: 900px;height: 140px;}
+	#footerTitle{ width: 450px; height: 30px;float:right;margin-right:20px;margin-top:40px;
+				font-weight: bold; font-family: 고딕, godic, sans-serif; font-size: 20px;}
+	/* footer 끝 */
+
+</style>
+<script type="text/javascript">
+
+//무기명 함수로 이벤트 처리
+window.onload=function(){// 1. onload는 팝업 띄울 때 
+	//body tag의 정보를 읽어 들인 후 실행된다. (body와 같이 실행)
+	//alert(document.frm);
+
+	//2. 이벤트와 tag와 분리하여 등록시킬때 사용한다.
+	window.document.getElementById("btn").addEventListener("click",btnClick);//함수기호()안 넣고 이름만! 기호 쓰면 바로 호출해버림!
+	window.document.getElementById("btn1").addEventListener("click",btnClick);
+}
+
+function btnClick() {
+	alert("버튼이 클릭되었습니다.");
+}
+
+function keyValue() {
+	//키가 눌리면 입력된 값을 받기.
+	//keydown 은 text에 값이 입력되기 전 키를 누르는 상태에서 호출되므로 입력된 값을 받을 수 없다.
+	//keyup 은 눌린키가 올라오는 상태에서 호출되므로 입력된 값을 받을 수 없다.
+	var obj=document.frm;
+	alert(obj.txtA.value);
+}//keyValue
+
+</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div id="headerTitle">
+		Class 4. Design
+		</div>
+	</div>	
+	<div id="container">
+	<form name="frm">
+		<input type="button" value="클릭" id="btn" class="btn"/>
+		<input type="button" value="클릭" id="btn1" class="btn"/><br/>
+		<label>onXXX처리</label>
+		<input type="text" name="txtA" id="txtA" class="inputBox" onkeyup="keyValue()"/><br/>
+	</form>
+	</div>
+	<div id="foofter">
+		<div id="footerTitle">
+		Copyright(c) 2021 Class 4, All Right Reserved.
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

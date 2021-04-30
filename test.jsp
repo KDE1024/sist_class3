@@ -7,7 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
- Back-end의 JSP 페이지
- 요청방식은 <strong><%= request.getMethod() %></strong> 방식 입니다.
+Back-end Page:HTML Form Control의 입력값을 받는 페이지
+입력한 아이디 : <strong>${param.id}</strong><br/>
+비밀번호 : <strong>${param.pass}</strong><br/>
+<a href="javascript:histroy.back();">뒤로</a>
 </body>
-</html> 
+</html>
