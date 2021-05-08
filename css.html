@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>insert title here</title>
+<link rel = "stylesheet" type="text/css" href="http://211.63.89.147/html_prj/common/css/main.css"/>
+<style type="text/css">
+
+</style>
+<!-- jQuery CDN(Contents Delivery Network) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	//css 함수에 속성값을 하나 넣으면 해당 속성에 대한 값을 얻을 수 있다.
+	var height=$("#c").css("height"); //아이디가 #x 인 것의 높이를 얻어와~.~.~.~
+	
+	$("#output").html("높이 : <strong>"+height+"</strong>");
+});//ready
+
+</script>
+</head>
+<body>
+<div id="a" style="height: 250px;">div A</div>
+<div id="b" style="height: 50px;">div B</div>
+<input type="text" id="c" class="inputBox"/><br/>
+
+<div id="output"></div>
+
+</body>
+</html>
